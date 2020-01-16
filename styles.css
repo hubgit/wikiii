@@ -1,0 +1,21 @@
+body {
+    font-family: "Comic Sans MS", sans-serif;
+}
+
+.mw-editsection {
+    display: none;
+}
+
+.thumb {
+    display: float;
+}
+
+.thumb.tright {
+    float: right;
+    margin-left: 1em;
+}
+
+.thumb.tleft {
+    float: left;
+    margin-right: 1em;
+}
