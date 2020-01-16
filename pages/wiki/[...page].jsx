@@ -10,8 +10,9 @@ const Article = props => (
 Article.getInitialProps = async function(router) {
   const res = await fetch(
     'https://en.wikipedia.org/w/api.php?action=parse&prop=text&format=json&origin=*&page=' +
-      router.query.id
+      router.query.page.join('/')
   )
+
   const data = await res.json()
 
   return data.parse
