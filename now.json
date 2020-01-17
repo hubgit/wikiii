@@ -1,0 +1,16 @@
+{
+  "name": "wikiii",
+  "version": 2,
+  "alias": "wikiii",
+  "builds": [
+    { "src": "public/**", "use": "@now/static" }
+  ],
+  "redirects": [
+    {"source":  "/", "destination": "/wiki/Wikipedia:Contents" }
+  ],
+  "rewrites": [
+    {"source":  "/wiki/(.*)", "destination": "/public/index.html" },
+    {"source":  "/scripts/(.*)", "destination": "/public/scripts/$1" },
+    {"source":  "/styles/(.*)", "destination": "/public/styles/$1" }
+  ]
+}
