@@ -1,7 +1,6 @@
 {
   "name": "wikiii",
   "version": 2,
-  "alias": "wikiii",
   "builds": [
     { "src": "public/**", "use": "@now/static" }
   ],
