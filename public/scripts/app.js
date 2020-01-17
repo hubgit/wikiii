@@ -28,7 +28,9 @@ function loadPage() {
       document.querySelector('h1').textContent = title
       document.querySelector('article').innerHTML = html
 
-      window.scrollTo(0, 0)
+      if (!window.location.hash) {
+        window.scrollTo(0, 0)
+      }
     })
 }
 
